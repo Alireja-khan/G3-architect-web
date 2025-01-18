@@ -8,12 +8,160 @@
   }
 
   /* Shared-Styles */
+  .flex{
+    display: flex;
+  }
+  .bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+  .explore-btn{
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    padding: 21px 24px 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .section-title{
+    font-size: 2.8125rem;
+    margin-bottom: 0;
+    font-size: 45px;
+    font-weight: bold;
+}
+.section-description{
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    
+}
   .Dark-1{
     color: #131313;
   }
+  .Dark-2{
+    color: #424242;
+  }
+  .Dark-3{
+    color: #727272;
+  }
 
+
+/* .Header-Style */
+.nav-bar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+}
 /* Nav-Styles */
+.nav-bar{
+    justify-content: space-between;
+}
 .Brand{
+    font-size: 2.815rem;
+    font-weight: bold;
+}
+.nav-links{
+    list-style: none;
+    
+}
+.nav-link{
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+/* Banner-Styles */
+.banner-content{
+    max-width: 881px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: ;
+    margin-bottom: 32px;
+}
+.banner-img{
+    width: 100%;
+    margin-bottom: 45px;
+}
+/* Teams and Features Style */
+.teams{
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features{
+    margin-left: 73px;
+    max-width: 537px;
+}
+
+#Quick{
+    font-weight: 500;
+}
+#our{
+    font-weight: bold;
+}
+#feachers{
+    font-weight: bold;
+    color: #FF900E;
+}
+
+/* features-details-styles */
+.features-details{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+
+/* Fact-sec-styles */
+.fact-sec{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-num{
     font-size: 45px;
-    font-weight: 800;
+    font-weight: 600;
+    color: #424242;
+
+}
+.fact-name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+}
+
+
+
+/* Responsive-Styles */
+@media screen and (max-width:576px) {
+
+    .nav-bar, .nav-links, .teams{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin: auto;
+        text-align: center;
+    }
 }
